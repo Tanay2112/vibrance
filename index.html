@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vibrance'16 | Intro</title>
+    <meta name="google-site-verification" content="G51vJpWZdYX_VrHB3uUivZDxWWnbo_vsr0F3dUZaSX4" />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="intro/css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <style>
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+        @font-face {
+            font-family: 'Electrolize';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Electrolize'), local('Electrolize-Regular'), url(http://themes.googleusercontent.com/static/fonts/electrolize/v2/DDy9sgU2U7S4xAwH5thnJ4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+        }
+
+        body {
+            font-family: 'Electrolize';
+        }
+
+        .container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1.main,
+        p.demos {
+            -webkit-animation-delay: 18s;
+            -moz-animation-delay: 18s;
+            -ms-animation-delay: 18s;
+            animation-delay: 18s;
+        }
+
+        .sp-container {
+            position: fixed;
+            top: -50px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+            background: -moz-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+            background: -ms-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+            background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
+        }
+
+        .sp-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 1000;
+        }
+
+        .sp-container h2 {
+            position: absolute;
+            top: 50%;
+            line-height: 100px;
+            height: 90px;
+            margin-top: -50px;
+            font-size: 90px;
+            width: 100%;
+            text-align: center;
+            color: transparent;
+            -webkit-animation: blurFadeInOut 3s ease-in backwards;
+            -moz-animation: blurFadeInOut 3s ease-in backwards;
+            -ms-animation: blurFadeInOut 3s ease-in backwards;
+            animation: blurFadeInOut 3s ease-in backwards;
+        }
+
+        .sp-container h2.frame-1 {
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            -ms-animation-delay: 0s;
+            animation-delay: 0s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+
+        }
+
+        .sp-container h2.frame-2 {
+            -webkit-animation-delay: 4s;
+            -moz-animation-delay: 4s;
+            -ms-animation-delay: 4s;
+            animation-delay: 4s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-container h2.frame-3 {
+            -webkit-animation-delay: 8s;
+            -moz-animation-delay: 8s;
+            -ms-animation-delay: 8s;
+            animation-delay: 8s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-container h2.frame-4 {
+            font-size: 200px;
+            -webkit-animation-delay: 11s;
+            -moz-animation-delay: 11s;
+            -ms-animation-delay: 11s;
+            animation-delay: 11s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-container h2.frame-5 {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none;
+            color: transparent;
+            text-shadow: 0px 0px 1px #fff;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-container h2.frame-5 span {
+            -webkit-animation: blurFadeIn 3s ease-in 15s backwards;
+            -moz-animation: blurFadeIn 1s ease-in 15s backwards;
+            -ms-animation: blurFadeIn 3s ease-in 15s backwards;
+            animation: blurFadeIn 3s ease-in 15s backwards;
+            color: transparent;
+            text-shadow: 0px 0px 1px #fff;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-container h2.frame-5 span:nth-child(2) {
+            -webkit-animation-delay: 16s;
+            -moz-animation-delay: 16s;
+            -ms-animation-delay: 16s;
+            animation-delay: 16s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-container h2.frame-5 span:nth-child(3) {
+            -webkit-animation-delay: 17s;
+            -moz-animation-delay: 17s;
+            -ms-animation-delay: 17s;
+            animation-delay: 17s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-globe {
+            position: absolute;
+            width: 282px;
+            height: 290px;
+            left: 50%;
+            top: 50%;
+            margin: -137px 0 0 -141px;
+            background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
+            -webkit-animation: fadeInBack 3s linear 18s backwards;
+            -moz-animation: fadeInBack 3s linear 18s backwards;
+            -ms-animation: fadeInBack 3s linear 18s backwards;
+            animation: fadeInBack 3s linear 18s backwards;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+            filter: alpha(opacity=30);
+            opacity: 0.3;
+            -webkit-transform: scale(5);
+            -moz-transform: scale(5);
+            -o-transform: scale(5);
+            -ms-transform: scale(5);
+            transform: scale(5);
+        }
+
+        .sp-circle-link {
+            position: absolute;
+            left: 50%;
+            bottom: 100px;
+            margin-left: -50px;
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            color: #3f1616;
+            font-size: 25px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-animation: fadeInRotate 1s linear 18s backwards;
+            -moz-animation: fadeInRotate 1s linear 18s backwards;
+            -ms-animation: fadeInRotate 1s linear 18s backwards;
+            animation: fadeInRotate 1s linear 18s backwards;
+            -webkit-transform: scale(1) rotate(0deg);
+            -moz-transform: scale(1) rotate(0deg);
+            -o-transform: scale(1) rotate(0deg);
+            -ms-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
+
+        .sp-circle-link:hover {
+            background: #85373b;
+            color: #fff;
+        }
+        /**/
+
+        @-webkit-keyframes blurFadeInOut {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.3);
+            }
+            20%,
+            75% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                text-shadow: 0px 0px 50px #fff;
+                -webkit-transform: scale(0);
+            }
+        }
+
+        @-webkit-keyframes blurFadeIn {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -webkit-transform: scale(1.3);
+            }
+            50% {
+                opacity: 0.5;
+                text-shadow: 0px 0px 10px #fff;
+                -webkit-transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes fadeInBack {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(0);
+            }
+            50% {
+                opacity: 0.4;
+                -webkit-transform: scale(2);
+            }
+            100% {
+                opacity: 0.2;
+                -webkit-transform: scale(5);
+            }
+        }
+
+        @-webkit-keyframes fadeInRotate {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(0) rotate(360deg);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1) rotate(0deg);
+            }
+        }
+        /**/
+
+        @-moz-keyframes blurFadeInOut {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -moz-transform: scale(1.3);
+            }
+            20%,
+            75% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -moz-transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                text-shadow: 0px 0px 50px #fff;
+                -moz-transform: scale(0);
+            }
+        }
+
+        @-moz-keyframes blurFadeIn {
+            0% {
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                -moz-transform: scale(1.3);
+            }
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                -moz-transform: scale(1);
+            }
+        }
+
+        @-moz-keyframes fadeInBack {
+            0% {
+                opacity: 0;
+                -moz-transform: scale(0);
+            }
+            50% {
+                opacity: 0.4;
+                -moz-transform: scale(2);
+            }
+            100% {
+                opacity: 0.2;
+                -moz-transform: scale(5);
+            }
+        }
+
+        @-moz-keyframes fadeInRotate {
+            0% {
+                opacity: 0;
+                -moz-transform: scale(0) rotate(360deg);
+            }
+            100% {
+                opacity: 1;
+                -moz-transform: scale(1) rotate(0deg);
+            }
+        }
+        /**/
+
+        @keyframes blurFadeInOut {
+            0% {
+                color: #000;
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                transform: scale(1.3);
+            }
+            20%,
+            75% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                display: none;
+                text-shadow: 0px 0px 50px #fff;
+                transform: scale(0);
+            }
+        }
+
+        @keyframes blurFadeIn {
+            0% {
+                color: #000;
+                opacity: 0;
+                text-shadow: 0px 0px 40px #fff;
+                transform: scale(1.3);
+            }
+            25%{
+                opacity: 0.3;
+                color: red;
+            }
+            50% {
+                opacity: 0.5;
+                text-shadow: 0px 0px 10px #fff;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                text-shadow: 0px 0px 1px #fff;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInBack {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 0.4;
+                transform: scale(2);
+            }
+            100% {
+                opacity: 0.2;
+                transform: scale(5);
+            }
+        }
+
+        @keyframes fadeInRotate {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(360deg)
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        body {
+          margin: 0;
+          background: #000; 
+      }
+      video { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background: url('') no-repeat;
+        background-size: cover;
+        transition: 1s opacity;
+        overflow: hidden;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }
+    .stopfade { 
+     opacity: .5;
+ }
+ h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background; 
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(../images/vib_intro.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+.shadowfilter {
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+}
+@media screen and (max-width: 640px){
+    .shadowfilter {
+        -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+    }
+}
+@media screen and (max-width: 640px){
+    .btn-skip{
+        font-size: 2em;
+        z-index: 999999;
+        position: absolute;
+        left: 2em;
+        top: 3em;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+    }
+}
+.btn-skip{
+    font-size: 2em;
+    z-index: 999999;
+    position: absolute;
+    bottom: 10px;
+    right: 1em;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+.btn-skip:hover{
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+</style>
+<script src="js/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="clr"></div>
+        </div>
+        <div class="sp-container">
+            <div class="sp-content">
+                <a href="../index.php"><button class="btn-skip">Skip</button></a>
+                <div class="sp-globe"></div>
+                <video autoplay id="bgvid" loop poster="images/vib_intro.jpg">
+                  <source src="intro.mp4" type="video/mp4">
+                  </video>
+                  <div class="frames" style="display: none;">
+                  <h2 class="frame-1" class="shadowfilter">After,  
+                    Months of Glaring Enthusiasm</h2>
+                    <h2 class="frame-2" class="shadowfilter">Weeks of Tiring Efforts</h2>
+                    <h2 class="frame-3" class="shadowfilter">And</h2>
+                    <h2 class="frame-4" style="font-size: 5em;" class="shadowfilter">Days of Extravagant preparations
+                    </h2>
+                    <h2 class="frame-5" class="shadowfilter"><span>It's finally here, </span><span style="font-size: 110px;">Vibrance'16</span>
+                    <span style="font-size: 0.7em;">Experience the extravaganza.</span></h2>
+                    <a class="sp-circle-link" href="index.php">Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+    $('#bgvid').on('canplaythrough', function(){
+            $('.frames').fadeIn();
+        });
+    </script>
+    </html>
